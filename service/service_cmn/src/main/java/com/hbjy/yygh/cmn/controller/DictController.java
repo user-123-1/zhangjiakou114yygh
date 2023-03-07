@@ -21,7 +21,7 @@ public class DictController {
     private DictService service;
 
     //根据数据id查询子数据列表
-    @ApiOperation(value = "根据数据id查询子数据列表test")
+    @ApiOperation(value = "根据数据id查询子数据列表test,新建的分支加入的内容。")
     @GetMapping("/findChildData/{id}")
     public Result findChildrenData(@PathVariable Long id) {
         List<Dict> list = service.findChildById(id);
